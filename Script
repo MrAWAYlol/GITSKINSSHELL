@@ -1,0 +1,312 @@
+// ==UserScript==
+// @name         Every item in the game for Shell Shockers
+// @version      0.1
+// @icon         data:image/jpeg;base64,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
+// @author       MrAWAY
+// @description  Feat. RAINBOW CROSSHAIR, FOG MOD, SKIN MOD, SKY COLOR MOD
+// @match        *://shellshock.io/*
+// @match        *://shellsocks.com/*
+// @match        *://algebra.vip/*
+// @match        *://biologyclass.club/*
+// @match        *://deadlyegg.com/*
+// @match        *://deathegg.world/*
+// @match        *://eggcombat.com/*
+// @match        *://egg.dance/*
+// @match        *://eggfacts.fun/*
+// @match        *://egghead.institute/*
+// @match        *://eggisthenewblack.com/*
+// @match        *://eggsarecool.com/*
+// @match        *://geometry.best/*
+// @match        *://geometry.monster/*
+// @match        *://geometry.pw/*
+// @match        *://geometry.report/*
+// @match        *://hardboiled.life/*
+// @match        *://hardshell.life/*
+// @match        *://humanorganising.org/*
+// @match        *://mathdrills.info/*
+// @match        *://mathfun.rocks/*
+// @match        *://mathgames.world/*
+// @match        *://math.international/*
+// @match        *://mathlete.fun/*
+// @match        *://mathlete.pro/*
+// @match        *://overeasy.club/*
+// @match        *://scrambled.best/*
+// @match        *://scrambled.tech/*
+// @match        *://scrambled.today/*
+// @match        *://scrambled.us/*
+// @match        *://scrambled.world/*
+// @match        *://shellshockers.club/*
+// @match        *://shellshockers.site/*
+// @match        *://shellshockers.us/*
+// @match        *://shellshockers.world/*
+// @match        *://softboiled.club/*
+// @match        *://violentegg.club/*
+// @match        *://violentegg.fun/*
+// @match        *://yolk.best/*
+// @match        *://yolk.life/*
+// @match        *://yolk.rocks/*
+// @match        *://yolk.tech/*
+// @match        *://zygote.cafe/*
+// @namespace    https://greasyfork.org/en/users/988790
+// @run-at       document-start
+// @grant        none
+// ==/UserScript==
+(function () {
+
+    const shellMod = {
+        interval: null,
+        gui: null,
+        storedData: {
+            scene: null,
+            camera: null,
+            reticle: null,
+            rainbowCrosshairEnabled: false,
+            colorDelta: 0.89,
+            colorIdx: 0,
+            colors: [[], [], []],
+            skyColor: "#FFFFFF",
+            skyBoxAlpha: 1,
+            useSkyColor: false,
+            fogDensity: 0.01,
+            fogColor: "#FFFFFF",
+        },
+        replacements: {
+            unlockSkins: {
+                regex: /inventory\[[A-z]\].id===[A-z].id\)return!0;return!1/,
+                replace: "rep = `${match[0]}||true`"
+            },
+            camera: {
+                regex: /.push\(([A-z])\),\w.maxZ=100/,
+                replace: "rep = `${match[0]},window.modHelper.camera=${match[1]}`"
+            },
+            scene: {
+                regex: /([A-z][A-z])\.fogDensity=.01\);/,
+                replace: "rep = `${match[0]}window.modHelper.scene=${match[1]};`"
+            },
+            crosshairs: {
+                regex: /document.getElementById\("dotReticle"\)/,
+                replace: "rep = `${match[0]};window.modHelper.reticle=this;${atob('ZG9jdW1lbnQudGl0bGU=')}=atob('U2hlbGwgU2hvY2tlcnMgfCBNb2RkZWQgYnkgQTMgfCBieSBCbHVlIFdpemFyZCBEaWdpdGFs');`"
+            }
+        },
+        updateSky: function () {
+            if (!this.storedData.scene) return;
+            let skyMesh = this.storedData.scene.getMeshByID("skyBox");
+            if (skyMesh) {
+                if (!skyMesh.oldTexture) skyMesh.oldTexture = skyMesh.material.reflectionTexture;
+
+                if (this.storedData.useSkyColor) {
+                    skyMesh.material.emissiveColor.set(...this.hexToRgb(this.storedData.skyColor));
+                    skyMesh.material.reflectionTexture = null;
+                    skyMesh.material.alpha = this.storedData.skyBoxAlpha;
+
+                } else {
+                    skyMesh.material.emissiveColor.set(...this.hexToRgb("#000000"));
+                    skyMesh.material.reflectionTexture = skyMesh.oldTexture;
+                    skyMesh.material.alpha = 1;
+
+                }
+            }
+        },
+        updateFog: function () {
+            if (!this.storedData.scene) return;
+
+            this.storedData.scene.fogColor.set(...this.hexToRgb(this.storedData.fogColor));
+            this.storedData.scene.fogDensity = this.storedData.fogDensity;
+        },
+        hexToRgb: function (hex) {
+            let result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+            return result ? [parseInt(result[1], 16) / 255, parseInt(result[2], 16) / 255, parseInt(result[3], 16) / 255] : [];
+        },
+        doHooks: function () {
+            window.XMLHttpRequest = class extends window.XMLHttpRequest {
+                constructor() {
+                    super(...arguments);
+                }
+                open() {
+                    if (arguments[1] && arguments[1].includes("shellshock.js")) this.scriptMatch = true;
+
+                    super.open(...arguments);
+                }
+                get response() {
+
+                    if (this.scriptMatch) {
+                        let responseText = super.response;
+
+
+                        let rep;
+                        for (let key of Object.keys(shellMod.replacements)) {
+
+                            let replacement = shellMod.replacements[key];
+                            let match = responseText.match(replacement.regex);
+                            if (match) responseText = responseText.replace(match[0], eval(replacement.replace));
+                        }
+
+                        return responseText;
+                    }
+                    return super.response;
+                }
+            };
+
+        },
+        createGUI: function () {
+            this.gui = new guify({
+                title: "<b>MrAWAY MOD panel</b>",
+                theme: "dark",
+                align: "left",
+                width: 300,
+                barMode: "none",
+                panelMode: "none",
+                opacity: 0.90,
+                root: window.container,
+                open: true
+            });
+
+            this.gui.Register([{
+                type: "folder",
+                label: "Fog Controls",
+                open: false
+            }, {
+                type: "folder",
+                label: "Sky Color",
+                open: false
+            }, {
+                type: "folder",
+                label: "Rainbow Crosshair",
+                open: false
+            }]);
+
+            this.gui.Register([{
+                type: "checkbox",
+                label: "Use Sky Color:",
+                object: this.storedData,
+                property: "useSkyColor",
+                onChange: () => this.updateSky()
+            }, {
+                type: "color",
+                label: "Sky Color:",
+                format: "hexColor",
+                object: this.storedData,
+                property: "skyColor",
+                onChange: () => this.updateSky()
+            }, {
+                type: "range",
+                label: "Alpha:",
+                min: 0, max: 1,
+                object: this.storedData,
+                property: "skyBoxAlpha",
+                onChange: () => this.updateSky()
+            }], {
+                folder: "Sky Color"
+            });
+
+            this.gui.Register([{
+                type: "range",
+                label: "Fog Density:",
+                min: 0, max: 1,
+                object: this.storedData,
+                property: "fogDensity",
+                onChange: () => this.updateFog()
+            }, {
+                type: "color",
+                label: "Fog Color:",
+                format: "hexColor",
+                object: this.storedData,
+                property: "fogColor",
+                onChange: () => this.updateFog()
+            }], {
+                folder: "Fog Controls"
+            });
+
+            this.gui.Register([{
+                type: "checkbox",
+                label: "Use Rainbow Crosshair:",
+                object: this.storedData,
+                property: "rainbowCrosshairEnabled",
+            }, {
+                type: "range",
+                label: "Delta:",
+                min: 0, max: 2.5,
+                object: this.storedData,
+                property: "colorDelta",
+            }], {
+                folder: "Rainbow Crosshair"
+            });
+
+            this.gui.Register({
+                type: "title",
+                label: "Created by MrAWAY"
+            }).container.align = "center";
+
+            this.gui.panel.menuButton.style.opacity = 0.3;
+        },
+        loadMod: function () {
+            const addScript = function () {
+                let script = document.createElement('script');
+                script.onload = function () { shellMod.createGUI() };
+                script.src = "https://unpkg.com/guify@0.12.0/lib/guify.min.js";
+                document.body.appendChild(script);
+            }
+            document.body ? addScript() : document.addEventListener("DOMContentLoaded", addScript);
+
+            this.doHooks();
+
+            function HSVtoRGB(h, s, v) {
+                var r, g, b, i, f, p, q, t;
+                i = Math.floor(h * 6);
+                f = h * 6 - i;
+                p = v * (1 - s);
+                q = v * (1 - f * s);
+                t = v * (1 - (1 - f) * s);
+                switch (i % 6) {
+                    case 0: r = v, g = t, b = p; break;
+                    case 1: r = q, g = v, b = p; break;
+                    case 2: r = p, g = v, b = t; break;
+                    case 3: r = p, g = q, b = v; break;
+                    case 4: r = t, g = p, b = v; break;
+                    case 5: r = v, g = p, b = q; break;
+                }
+                return { r: Math.round(r * 255), g: Math.round(g * 255), b: Math.round(b * 255) };
+            }
+
+            for (let wl = 0; wl < 100; wl++) {
+                const { r, g, b } = HSVtoRGB(wl / 100.0 * 0.85, 1.0, 1.0);
+
+                this.storedData.colors[0].push(r);
+                this.storedData.colors[1].push(g);
+                this.storedData.colors[2].push(b);
+            }
+
+            if (!this.interval) {
+                this.interval = setInterval(function () {
+                    if (shellMod.storedData.rainbowCrosshairEnabled && typeof extern !== "undefined" && extern.inGame) {
+                        for (let i = 0; i < 4; i++) {
+
+                            let ch = shellMod.storedData.reticle.crosshairs[i];
+                            const idx = Math.mod(Math.floor(shellMod.storedData.colorIdx + 30 * i), 100);
+
+                            const rgbString = `rgb(${shellMod.storedData.colors[0][idx]}, ${shellMod.storedData.colors[1][idx]}, ${shellMod.storedData.colors[2][idx]})`;
+                            ch.style.backgroundColor = rgbString;
+                            ch.style.color = rgbString;
+
+                        }
+
+                        shellMod.storedData.colorIdx += shellMod.storedData.colorDelta;
+                        if (shellMod.storedData.colorIdx >= 100) shellMod.storedData.colorIdx = 0;
+                    }
+                    if (typeof extern !== "undefined" && typeof vueApp !== "undefined") {
+                        if (!vueApp.isUpgraded || !extern.account.isSubscriber) { vueApp.setAccountUpgraded(true, ""); extern.account.isSubscriber = true; }
+                    }
+                }, 33);
+            }
+        }
+
+    }
+
+    window.modHelper = {
+        set scene(c) { shellMod.storedData.scene = c },
+        set camera(c) { shellMod.storedData.camera = c },
+        set reticle(c) { shellMod.storedData.reticle = c }
+    }
+
+    shellMod.loadMod();
+}())
